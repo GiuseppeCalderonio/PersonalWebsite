@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
-
 
 @Component({
   selector: 'app-root',
@@ -10,16 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  private readonly title = 'myApp';
+  title = 'myApp';
   private readonly assetsDir = './../assets';
-
-
-
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
-    this.matIconRegistry.addSvgIcon(
-      'github',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('//github-icon.svg')
-    );
-  }
 
 }
