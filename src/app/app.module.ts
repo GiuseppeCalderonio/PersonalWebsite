@@ -13,7 +13,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
